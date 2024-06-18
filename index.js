@@ -36,10 +36,8 @@ const fs = require('fs');
  
 
 
-app.get("/", (req, res)=>{
-    res.sendFile(__dirname+ '/online.html');
-    // res.sendFile(__dirname+ '/public/chat.html');
-    // res.send('Hello World!')
+app.get("/", (req, res)=>{ 
+   res.send('server running')
 });
 
 app.get("/online", (req, res)=>{
@@ -51,6 +49,6 @@ app.get("/online", (req, res)=>{
 });
 
 server.listen(8080, ()=>{
-    console.log("listening Port 3000");
+    console.log("listening Port 8080");
 })
 // server.listen(PORT, () => console.log(`Listening on ${PORT}`));
